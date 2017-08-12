@@ -21,16 +21,16 @@
 	</style>
 </head>
 <body>
-	<header class="gt-top-menu xs-left">
-	  <label class="menu-toggle">
+	<header class="gt-top-menu xs-right">
+	  <label class="menu-toggle left">
 	    <svg viewBox="0 0 24 24">
 	      <path fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
 	    </svg>
 	  </label>
 	  <nav>
 	    <ul>
-	      <a href="index.html"><li>Catálogo</li></a>
-	      <a href="ciclo.html"><li class="active">Ciclo</li></a>
+	      <a href="index.html"><li class="active">Catálogo</li></a>
+	      <a href="ciclo.html"><li>Ciclo</li></a>
 	      <a href="components"><li>Componentes</li></a>
 	      <a href="forms"><li>Formulários</li></a>
 	      <a href="helpers"><li>Auxiliares</li></a>
@@ -40,21 +40,53 @@
 	<section>
 		<h1 class="text-center">Catálogo</h1>
 		<div class="gt-form">
-			<select>
-				<option>Eudora</option>
-				<option>Avon</option>
-				<option>Natura</option>
+			<select id="team" name="team">
+				<option value="e">Eudora</option>
+				<option value="a">Avon</option>
+				<option value="n">Natura</option>
 			</select>
 		</div>
-		<div class="card content-align">
-			<img src="assets/img/1.png">
-			<div>
-				<h3>Lorem Ipsum</h3>
-				<p class="no-margin">R$ 22,90</p>
+		<div class="product" id="e">
+			<div class="card content-align">
+				<img src="assets/img/1.png">
+				<div>
+					<h3>Lorem Ipsum</h3>
+					<p class="no-margin">R$ 22,90</p>
+				</div>
+				<div>+</div>
 			</div>
-			<div>+</div>
+		</div>
+		<div  class="product"id="a" style="display: none">
+			<div class="card content-align">
+				<img src="assets/img/1.png">
+				<div>
+					<h3>Lorem Ipsum</h3>
+					<p class="no-margin">R$ 45,90</p>
+				</div>
+				<div>+</div>
+			</div>
+		</div>
+		<div class="product" id="n" style="display: none">
+			<div class="card content-align">
+				<img src="assets/img/1.png">
+				<div>
+					<h3>Lorem Ipsum</h3>
+					<p class="no-margin">R$ 92,90</p>
+				</div>
+				<div>+</div>
+			</div>
 		</div>
 	</section>
 	<script type="text/javascript" src="node_modules/gaintime/js/gaintime.min.js"></script>
+	<script type="text/javascript">
+		document.getElementById("team").addEventListener("change", function(e) {
+			products = [].slice.call(document.getElementsByClassName("product"));
+			products.forEach(function(a) {
+				a.style = "display: none"
+			})
+			document.getElementById(e.target.value).style = "display: block"
+
+		})
+	</script>
 </body>
 </html>
