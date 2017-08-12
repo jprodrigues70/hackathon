@@ -1,0 +1,66 @@
+<page
+  class="page"
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="shared/widgets"
+  loaded="loaded"
+  >
+
+  <page.actionBar>
+    <action-bar title="Perfil" class="action-bar">
+      <navigation-button icon="res://ic_menu" tap="toggleDrawer" ios:visibility="collapsed" />
+      <action-bar.actionItems>
+        <ios>
+          <action-item icon="res://ic_menu" ios.position="left" tap="toggleDrawer" />
+        </ios>
+      </action-bar.actionItems>
+    </action-bar>
+  </page.actionBar>
+
+
+  <drawer:rad-side-drawer id="drawer" showOverNavigation="true">
+    <drawer:rad-side-drawer.drawerContent>
+      <widgets:drawer-content />
+    </drawer:rad-side-drawer.drawerContent>
+
+     <drawer:rad-side-drawer.mainContent>
+     <!-- Home page contents -->
+      <stack-layout>
+        <image src="~/images/tais.jpg" id="logo" tap="fun" height="100" margin="20 0 0 0" />
+        <label class="h2 m-20 text-center" text="{{ text }}" />
+        <ScrollView row="1" orientation="vertical" class="main-scrollview">
+            <grid-layout columns="auto" rows="auto, auto, auto, auto, auto, auto" class="main-scrollview-child">
+                <grid-layout row="0" columns="auto, auto" rows="auto" class="perfil-grid" >
+                    <label col="0" class="perfil-grid-texto" text="Pontuação Global" />
+                    <Button col="1" class="perfil-grid-button" text="Prata 2" />
+                </grid-layout>
+                <grid-layout row="1" columns="auto, auto" rows="auto" class="perfil-grid" >
+                    <label col="0" class="perfil-grid-texto" text="Ciclo Eudora" />
+                    <Button col="1" class="perfil-grid-button" text="150 pontos" />
+                </grid-layout>
+                <label row="2" text="Insígnias" fontSize="30" padding="20 10" />
+                <grid-layout row="3" columns="auto, auto, auto, auto" rows="auto" >
+                    <image src="~/images/star-half.png" col="0" height="50" marginLeft="30" />
+                    <image src="~/images/diamond.png" col="1" height="50" marginLeft="30" />
+                    <image src="~/images/crown.png" col="2" height="50" marginLeft="30" />
+                    <image src="~/images/creation.png" col="3" height="50" marginLeft="30" />
+                </grid-layout>
+                <label row="4" text="Benefícios" fontSize="30" padding="20 10" />
+                <grid-layout row="5" columns="auto, auto, auto, auto" rows="auto, auto" >
+                    <image src="~/images/star-half.png" row="0" col="0" height="50" marginLeft="30" />
+                    <image src="~/images/diamond.png" row="0" col="1" height="50" marginLeft="30" />
+                    <image src="~/images/crown.png" row="0" col="2" height="50" marginLeft="30" />
+                    <image src="~/images/creation.png" row="0" col="3" height="50" marginLeft="30" />
+                    <label row="1" col="0" text="D (Brindes)" padding="10" />
+                    <label row="1" col="1" text="C (Amostras)" padding="10" />
+                    <label row="1" col="2" text="B (Produtos)" padding="10" />
+                    <label row="1" col="3" text="A (Lucro)" padding="10" />
+                </grid-layout>
+            </grid-layout>
+        </ScrollView>
+      </stack-layout>
+      </drawer:rad-side-drawer.mainContent>
+
+  </drawer:rad-side-drawer>
+
+</page>

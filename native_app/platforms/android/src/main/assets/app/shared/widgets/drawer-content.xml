@@ -1,0 +1,10 @@
+<grid-layout class="drawer-content">
+  <stack-layout>
+    <label text="Perfil" tap="navigate" class="{{ selectedPage == 'perfil' ? 'selected' : '' }}" />
+    <label text="Produtos" tap="navigate" class="{{ selectedPage == 'produtos' ? 'selected' : '' }}" />
+    <label text="Pedidos" tap="navigate" class="{{ selectedPage == 'pedidos' ? 'selected' : '' }}" />
+    <label text="Catalogo" tap="navigate" class="{{ selectedPage == 'catalogo' ? 'selected' : '' }}" />
+    <!-- <label text="About" tap="navigate" class="{{ selectedPage == 'about' ? 'selected' : '' }}" />
+    <label text="Settings" tap="navigate" class="{{ selectedPage == 'settings' ? 'selected' : '' }}" /> -->
+  </stack-layout>
+</grid-layout>

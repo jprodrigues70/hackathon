@@ -1,0 +1,89 @@
+﻿@import '~/nativescript-theme-core/css/purple.css';
+.action-bar {
+    background-color:#bb285c;
+}
+.drawer-content {
+  background-color:#bb285c;
+  color: #ffffff;
+  padding-top: 20;
+  width:300;
+}
+.drawer-content label {
+  font-size: 20;
+  margin: 10 0 15 25;
+}
+.selected {
+  color: #e4ba4e;
+}
+.main-grid {
+    width: 100%;
+    height: 100%;
+}
+    .grid-header {
+        padding: 10 50 10 50;
+        margin-bottom: 10;
+    }
+        .header {
+            font-size: 50;
+            color: black;
+        }
+        .sub-header {
+            font-size: 15;
+        }
+
+    .colonia-list-item {
+        width: 100%;
+        height: 100;
+    }
+        .colonia-list-image {
+            padding: 10;
+            width: 60;
+            width: 70;
+        }
+        .colonia-list-title {
+            font-size: 20;
+        }
+        .colonia-list-price {
+            font-size: 15;
+            color: red;
+            font-weight: bold;
+        }
+        .colonia-list-plus {
+            width: 20;
+            height: 20;
+        }
+
+.perfil-grid {
+    width: 100%;
+    padding: 20 10;
+}
+    .perfil-grid-texto {
+        font-size: 15;
+    }
+    .perfil-grid-button {
+        color: #FFF;
+        background-color: #bb285c;
+    }
+
+.produto-header {
+    width: 100%;
+    height: 50;
+    padding: 10 20;
+    font-size: 20;
+}
+    .produto-header-left {
+        margin-right: 100;
+    }
+    .produto-item {
+        padding: 10 20;
+        width: 100%;
+    }
+    .produto-item-codigo {
+        color: rgba(0, 0, 0, 0.5);
+        margin-right: 150;
+    }
+
+.pedido-item {
+    padding: 30;
+    width: 100%;
+}

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-appcompat-v7-25.3.1_492a0e41994fbb9d44d706177af135400c7c4f92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-recyclerview-v7-25.3.1_55f45581fab02ab7dfe5f26f16d971ab64936181.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/vocepodemais/runtime/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30b97ea5d6274e02330dcc69943087778363c172">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/vocepodemais-runtime-unspecified_bdaaf57b9584da478ebd45743c633bf3dbd4e86c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/support-annotations-25.3.1_1fadc471903c80a4d171ab39179d210e4d54d262.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-media-compat-25.3.1_dfc2508e09a0fb8636d4a0da1770b1f54ccb60eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/List-2017.1.504-dev-release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="68e4f95c7b18e9879ebfb526a9545ed960ef3190">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/intermediates-exploded-aar-List-2017.1.504-dev-release_9117933e0b81ece52f8b1fdb08784bbc37682afd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/vocepodemais/runtime/unspecified/jars/libs/binding-generator.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e74f5f1ebe12c7cfa6591158ef298c95a5275f">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/binding-generator_a8456db73e944c248dde7235b41d63a83bd98aa9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/Data-2017.1.504-dev-release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b641bfe74a612df8e72181362ec895f8f56f73e">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/intermediates-exploded-aar-Data-2017.1.504-dev-release_c49f9ff5c159793784190bb637693b4cfce6cb09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-transition-25.3.1_ef79f1fc399497d04d596e6708d53d1971e4f295.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-design-25.3.1_1a3482225e6ce7185687c1946f17340eaa476190.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/Primitives-2017.1.504-dev-release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8370f7dca6cdb1c2b3407855a4c6d481ddd7b0d6">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/intermediates-exploded-aar-Primitives-2017.1.504-dev-release_d0bce5f9a94def4972d4b2d395433567e447eada.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-v4-25.3.1_99352e58a434a7fd00febd5d73b9401d171d24cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-core-utils-25.3.1_7605de779f33d36f0f8922737760067b9a66c998.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-animated-vector-drawable-25.3.1_c9da845a09ca52c0128696239f92a48d84ccf147.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/Common-2017.1.504-dev-release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="35d17e8af8b765ad6db33ed0dad10fd3945aec35">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/intermediates-exploded-aar-Common-2017.1.504-dev-release_1bac99689b17c55f0d4b6d1531542ce04d789c73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-compat-25.3.1_2c8f4da06c1c5913b294c3116e6c7d73d06c71f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-vector-drawable-25.3.1_94860ce6fe7c6c6f67de8949392aa5e21516db7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/widgets-release/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ed69cd5603304a6fc9a36a94c8be977a1d0e4857">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/intermediates-exploded-aar-widgets-release_12b9d04e6e2e452362f3a8f024a4fe4206c52f41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-core-ui-25.3.1_c41e05b29e707f9998401a4843ff5022e834599c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-fragment-25.3.1_3079777dbb63a6e531d868cef4ddb869c33eb042.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-hdpi/icon.png",
+        "source": "/home/adeilson/Desktop/vocepodemais/platforms/android/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/adeilson/Desktop/vocepodemais/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-hdpi/ic_menu.png",
+        "source": "/home/adeilson/Desktop/vocepodemais/platforms/android/src/main/res/drawable-hdpi/ic_menu.png"
+    }
+]

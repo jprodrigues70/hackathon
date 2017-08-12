@@ -1,0 +1,58 @@
+<page
+  class="page"
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="shared/widgets"
+  loaded="loaded"
+  >
+
+  <page.actionBar>
+    <action-bar title="Produtos" class="action-bar">
+      <navigation-button icon="res://ic_menu" tap="toggleDrawer" ios:visibility="collapsed" />
+      <action-bar.actionItems>
+        <ios>
+          <action-item icon="res://ic_menu" ios.position="left" tap="toggleDrawer" />
+        </ios>
+      </action-bar.actionItems>
+    </action-bar>
+  </page.actionBar>
+
+
+  <drawer:rad-side-drawer id="drawer" showOverNavigation="true">
+    <drawer:rad-side-drawer.drawerContent>
+      <widgets:drawer-content />
+    </drawer:rad-side-drawer.drawerContent>
+
+     <drawer:rad-side-drawer.mainContent>
+     <!-- Home page contents -->
+         <grid-layout columns="auto" rows="auto, auto, auto, auto, auto, auto" loaded="mainContentLoaded" class="main-grid">
+             <grid-layout row="0" columns="auto, auto" rows="auto, *" class="grid-header">
+                 <Label text="Adicionar Produtos" textWrap="true" row="0" fontSize="30" />
+                 <Label text="Ciclo 10/2017" textWrap="true" row="1" class="sub-header" />
+             </grid-layout>
+             <GridLayout row="1" columns="auto, auto" rows="auto" class="produto-header">
+                 <Label text="Produto" textWrap="true" col="0" class="produto-header-left"/>
+                 <Label text="Quantidade" textWrap="true" col="1" />
+             </GridLayout>
+             <StackLayout row="2" orientation="horizontal" class="produto-item">
+                 <TextField text="Código" class="produto-item-codigo" />
+                 <TextView keyboardType="number" text="0" class="produto-item-quantidade"/>
+              </StackLayout>
+             <StackLayout row="3" orientation="horizontal" class="produto-item">
+                 <TextField text="Código" class="produto-item-codigo" />
+                 <TextView keyboardType="number" text="0" class="produto-item-quantidade"/>
+              </StackLayout>
+             <StackLayout row="4" orientation="horizontal" class="produto-item">
+                 <TextField text="Código" class="produto-item-codigo" />
+                 <TextView keyboardType="number" text="0" class="produto-item-quantidade"/>
+              </StackLayout>
+              <StackLayout row="5" orientation="vertical" class="buttons">
+                 <Button text="Adicionar Campo" />
+                 <Button text="Finalizar" class="perfil-grid-button" />
+              </StackLayout>
+         </grid-layout>
+      </drawer:rad-side-drawer.mainContent>
+
+  </drawer:rad-side-drawer>
+
+</page>

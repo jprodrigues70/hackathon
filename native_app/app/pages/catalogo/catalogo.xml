@@ -1,0 +1,67 @@
+<page
+  class="page"
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="shared/widgets"
+  loaded="loaded">
+
+  <page.actionBar>
+    <action-bar title="Catalogo" class="action-bar">
+      <navigation-button icon="res://ic_menu" tap="toggleDrawer" ios:visibility="collapsed" />
+      <action-bar.actionItems>
+        <ios>
+          <action-item icon="res://ic_menu" ios.position="left" tap="toggleDrawer" />
+        </ios>
+      </action-bar.actionItems>
+    </action-bar>
+  </page.actionBar>
+
+  <drawer:rad-side-drawer id="drawer" showOverNavigation="true">
+    <drawer:rad-side-drawer.drawerContent>
+      <widgets:drawer-content />
+    </drawer:rad-side-drawer.drawerContent>
+<drawer:rad-side-drawer.mainContent>
+      <!-- Settings page content -->
+ <grid-layout columns="auto" rows="auto, *" loaded="mainContentLoaded" class="main-grid">
+     <grid-layout row="0" columns="auto, auto" rows="auto, *" class="grid-header">
+         <Label text="Catalogo" textWrap="true" row="0" class="header"/>
+         <Label text="Eudora ciclo 10" textWrap="true" row="1" class="sub-header" />
+     </grid-layout>
+     <ScrollView row="1" orientation="vertical" class="main-scrollview">
+         <grid-layout columns="auto" rows="auto, auto, auto, auto, auto" class="main-scrollview-child">
+             <grid-layout row="0" columns="auto, auto, auto" rows="auto, auto" class="colonia-list-item">
+                <Image src="~/images/perfume.jpg" rowSpan="2" row="0" col="0" class="colonia-list-image" style.verticalAlignment="top"/>
+                <Label text="A.R.T Deo Colonia - 95ml" row="0" col="1" textWrap="true" class="colonia-list-title" />
+                <Label text="R$ 99,99" row="1" col="1" textWrap="true" class="colonia-list-price" />
+                <Image src="~/images/plus.png" row="1" col="2" class="colonia-list-plus" />
+            </grid-layout>
+            <grid-layout row="1" columns="auto, auto, auto" rows="auto, auto" class="colonia-list-item">
+                <Image src="~/images/perfume.jpg" rowSpan="2" row="0" col="0" class="colonia-list-image" style.verticalAlignment="top"/>
+                <Label text="A.R.T Deo Colonia - 95ml" row="0" col="1" textWrap="true" class="colonia-list-title" />
+                <Label text="R$ 99,99" row="1" col="1" textWrap="true"  class="colonia-list-price" />
+                <Image src="~/images/plus.png" row="1" col="2" class="colonia-list-plus" />
+            </grid-layout>
+            <grid-layout row="2" columns="auto, auto, auto" rows="auto, auto" class="colonia-list-item">
+                <Image src="~/images/perfume.jpg" rowSpan="2" row="0" col="0" class="colonia-list-image" style.verticalAlignment="top"/>
+                <Label text="A.R.T Deo Colonia - 95ml" row="0" col="1" textWrap="true" class="colonia-list-title" />
+                <Label text="R$ 99,99" row="1" col="1" textWrap="true"  class="colonia-list-price" />
+                <Image src="~/images/plus.png" row="1" col="2" class="colonia-list-plus" />
+            </grid-layout>
+            <grid-layout row="3" columns="auto, auto, auto" rows="auto, auto" class="colonia-list-item">
+                <Image src="~/images/perfume.jpg" rowSpan="2" row="0" col="0" class="colonia-list-image" style.verticalAlignment="top"/>
+                <Label text="A.R.T Deo Colonia - 95ml" row="0" col="1" textWrap="true" class="colonia-list-title" />
+                <Label text="R$ 99,99" row="1" col="1" textWrap="true"  class="colonia-list-price" />
+                <Image src="~/images/plus.png" row="1" col="2" class="colonia-list-plus" />
+            </grid-layout>
+            <grid-layout row="4" columns="auto, auto, auto" rows="auto, auto" class="colonia-list-item">
+                <Image src="~/images/perfume.jpg" rowSpan="2" row="0" col="0" class="colonia-list-image" style.verticalAlignment="top"/>
+                <Label text="A.R.T Deo Colonia - 95ml" row="0" col="1" textWrap="true" class="colonia-list-title" />
+                <Label text="R$ 59,99" row="1" col="1" textWrap="true"  class="colonia-list-price" />
+                <Image src="~/images/plus.png" row="1" col="2" class="colonia-list-plus" />
+            </grid-layout>
+        </grid-layout>
+    </ScrollView>
+ </grid-layout>
+</drawer:rad-side-drawer.mainContent>
+  </drawer:rad-side-drawer>
+</page>
