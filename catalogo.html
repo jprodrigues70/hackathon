@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minha página</title>
+	<link rel="stylesheet" type="text/css" href="nm/gaintime/css/gaintime.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.card {
+			box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+			padding: 15px;
+		}
+
+		.card p {
+			color: #F69F55;
+			font-weight: bold;
+		}
+		.card h3 {
+			margin-bottom: 2px;
+		}
+	</style>
+</head>
+<body>
+	<header class="gt-top-menu xs-right">
+	  <label class="menu-toggle left">
+	    <svg viewBox="0 0 24 24">
+	      <path fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+	    </svg>
+	  </label>
+	  <nav>
+	    <ul>
+	      <a href="index.html"><li>Início</li></a>
+	      <a href="catalogo.html"><li class="active">Catálogo</li></a>
+	      <a href="components"><li>Componentes</li></a>
+	      <a href="forms"><li>Formulários</li></a>
+	      <a href="helpers"><li>Auxiliares</li></a>
+	    </ul>
+	  </nav>
+	</header>
+	<section>
+		<h1 class="text-center">Catálogo</h1>
+		<div class="gt-form">
+			<select id="team" name="team">
+				<option value="e">Eudora</option>
+				<option value="a">Avon</option>
+				<option value="n">Natura</option>
+			</select>
+		</div>
+		<div class="product" id="e">
+			<div class="card content-align">
+				<img src="assets/img/1.png">
+				<div>
+					<h3>Lorem Ipsum</h3>
+					<p class="no-margin">R$ 22,90</p>
+				</div>
+				<div>+</div>
+			</div>
+		</div>
+		<div  class="product"id="a" style="display: none">
+			<div class="card content-align">
+				<img src="assets/img/1.png">
+				<div>
+					<h3>Lorem Ipsum</h3>
+					<p class="no-margin">R$ 45,90</p>
+				</div>
+				<div>+</div>
+			</div>
+		</div>
+		<div class="product" id="n" style="display: none">
+			<div class="card content-align">
+				<img src="assets/img/1.png">
+				<div>
+					<h3>Lorem Ipsum</h3>
+					<p class="no-margin">R$ 92,90</p>
+				</div>
+				<div>+</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="nm/gaintime/js/gaintime.min.js"></script>
+	<script type="text/javascript">
+		document.getElementById("team").addEventListener("change", function(e) {
+			products = [].slice.call(document.getElementsByClassName("product"));
+			products.forEach(function(a) {
+				a.style = "display: none"
+			})
+			document.getElementById(e.target.value).style = "display: block"
+
+		})
+	</script>
+</body>
+</html>
