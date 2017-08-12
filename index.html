@@ -1,60 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"></meta>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="node_modules/gaintime/css/gaintime.min.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minha página</title>
+	<link rel="stylesheet" type="text/css" href="nm/gaintime/css/gaintime.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
-		.card {
-			box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
-			padding: 15px;
+		.circle {
+			border: 1px solid #333;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			background-color: #AAA;
 		}
 
-		.card p {
-			color: #F69F55;
-			font-weight: bold;
+		.circle-case {
+			z-index: 2;
+			position: absolute;
+			left: 5px;
 		}
-		.card h3 {
-			margin-bottom: 2px;
+
+		.circle.active {
+			width: 50px;
+			height: 50px;
+			background-color: #bb285c;
+		}
+
+		.circle-case.active {
+			left: 60px;
+		}
+
+		.line {
+			width: 1px;
+			background-color: #333;
+			height: 100%;
+			position: absolute;
+			left: 15px;
+		}
+
+		.h-line {
+			width: 60px;
+			height: 1px;
+			position: absolute;
+			background-color: #333;
+			left: 15px;
+		}
+
+		#first, #second {
+			background-color: #FFF;
+			width: 15px;
+			height: 15px;
+			cursor: pointer;
+			border-color: #4b99f0;
+		}
+
+		#first-s, #second-s {
+			height: 60%; 
+			position: relative;
 		}
 	</style>
 </head>
 <body>
-	<header class="gt-top-menu xs-left">
-	  <label class="menu-toggle">
+	<header class="gt-top-menu xs-right">
+	  <label class="menu-toggle left">
 	    <svg viewBox="0 0 24 24">
 	      <path fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
 	    </svg>
 	  </label>
 	  <nav>
 	    <ul>
-	      <a href="index.html"><li>Catálogo</li></a>
-	      <a href="ciclo.html"><li class="active">Ciclo</li></a>
-	      <a href="components"><li>Componentes</li></a>
-	      <a href="forms"><li>Formulários</li></a>
-	      <a href="helpers"><li>Auxiliares</li></a>
+	      <a href="index.html"><li class="active">Início</li></a>
+	      <a href="catalogo.html"><li>Catálogo</li></a>
+	      <a href="ciclos.html"><li>Ciclos</li></a>
 	    </ul>
 	  </nav>
 	</header>
-	<section>
-		<h1 class="text-center">Catálogo</h1>
-		<div class="gt-form">
-			<select>
-				<option>Eudora</option>
-				<option>Avon</option>
-				<option>Natura</option>
-			</select>
-		</div>
-		<div class="card content-align">
-			<img src="assets/img/1.png">
-			<div>
-				<h3>Lorem Ipsum</h3>
-				<p class="no-margin">R$ 22,90</p>
+	<section style="height: 100%">
+		<div>
+			<div id="first-t">
+				<h1 class="text-center">Ciclo 10</h1>
+			</div>			
+			<div id="second-t" style="display: none">
+				<h1 class="text-center">Global</h1>
 			</div>
-			<div>+</div>
+			<div class="content-align text-center center">
+				<div id="first" class="circle" style="background-color: #4b99f0"></div>
+				<div id="second" class="circle"></div>
+			</div>
+		</div>
+		<div id="first-s" >
+			<div class="line"></div>
+			<svg style="width:40px;height:40px; position: absolute; top: -26px; left: -4px" viewBox="0 0 24 24">
+			    <path fill="#000000" d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+			</svg>
+			<div class="circle-case content-align" style="top:5%">
+				<div class="circle inactive"></div>
+				<div>
+					<h4 class="no-margin">Lorem</h4>
+					<p class="no-margin">Ippsum</p>
+				</div>
+				<p style="margin-left: 30px">1500pts</p>
+			</div>
+			<div class="circle-case content-align" style="top:30%">
+				<div class="circle inactive"></div>
+				<div>
+					<h4 class="no-margin">Lorem</h4>
+					<p class="no-margin">Ippsum</p>
+				</div>
+				<p style="margin-left: 30px">800pts</p>
+			</div>
+			<div class="circle-case content-align" style="top:60%">
+				<div class="circle inactive"></div>
+				<div>
+					<h4 class="no-margin">Lorem</h4>
+					<p class="no-margin">Ippsum</p>
+				</div>
+				<p style="margin-left: 30px">500pts</p>
+			</div>
+			<div class="h-line" style="top: 90%"></div>
+			<div class="circle-case active content-align" style="top: calc(90% - 45px);">
+				<div class="circle active">
+					<svg style="width:40px;height:40px; margin: 3px;" viewBox="0 0 24 24">
+					    <path fill="#ffffff" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+					</svg>
+				</div>
+				<div>
+					<h4 class="no-margin">Início</h4>
+					<p class="no-margin">Primeira Venda</p>
+				</div>
+			</div>
+		</div>		
+		<div id="second-s" style="display: none">
+			<div class="line"></div>
+			<div class="circle-case content-align" style="top:5%">
+				<div class="circle inactive"></div>
+				<div>
+					<h4 class="no-margin">Prata 2</h4>
+					<p class="no-margin">Ippsum</p>
+				</div>
+				<p style="margin-left: 30px">2300pts</p>
+			</div>
+			<div class="circle-case content-align" style="top:25%">
+				<div class="circle inactive"></div>
+				<div>
+					<h4 class="no-margin">Prata 1</h4>
+					<p class="no-margin">Ippsum</p>
+				</div>
+				<p style="margin-left: 30px">1500pts</p>
+			</div>
+			<div class="circle-case content-align" style="top:90%">
+				<div class="circle inactive"></div>
+				<div>
+					<h4 class="no-margin">Bronze 1</h4>
+					<p class="no-margin">Primeiras vendas</p>
+				</div>
+				<p style="margin-left: 30px">150pts</p>
+			</div>
+			<div class="h-line" style="top: 80%"></div>
+			<div class="circle-case active content-align" style="top: calc(80% - 45px);">
+				<div class="circle active">
+					<svg style="width:40px;height:40px; margin: 3px;" viewBox="0 0 24 24">
+						<path fill="#fff" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+					</svg>
+				</div>
+				<div>
+					<h4 class="no-margin">Bronze 2</h4>
+					<p class="no-margin">Mais de 150 vendas</p>
+				</div>
+			</div>
 		</div>
 	</section>
-	<script type="text/javascript" src="node_modules/gaintime/js/gaintime.min.js"></script>
+	<script type="text/javascript" src="nm/gaintime/js/gaintime.min.js"></script>
+	<script type="text/javascript">
+		document.getElementById("first").addEventListener("click", function(e) {
+			e.target.style = "background-color:  #4b99f0"
+			document.getElementById("second").style = "background-color: #FFF";
+			document.getElementById("first-s").style = "display: block";
+			document.getElementById("first-t").style = "display: block";
+			document.getElementById("second-s").style = "display: none";
+			document.getElementById("second-t").style = "display: none";
+		});		
+		document.getElementById("second").addEventListener("click", function(e) {
+			e.target.style = "background-color:  #4b99f0"
+			document.getElementById("first").style = "background-color: #FFF";
+			document.getElementById("second-s").style = "display: block";
+			document.getElementById("second-t").style = "display: block";
+			document.getElementById("first-s").style = "display: none";
+			document.getElementById("first-t").style = "display: none";
+		});
+	</script>
 </body>
 </html>
